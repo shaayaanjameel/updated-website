@@ -37,32 +37,11 @@ html {
   box-sizing: inherit;
 }
 
-
-/*Rajaa:
-	in body put positions:relative
-	min-height:100% 
-	and padding bottom: #em 
-	that number u figure out 
-	in footer its position absolute 
-Shaayaan Jameel:
-	In body? 
-Rajaa:
-	top 0
-	body 0
-	left 0 and right 0
-*/
-
-/* Consistent CSS */
-
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   text-align: center;
-/*
-  background-image: url(../images/background.jpg);
-  background-repeat: repeat;
-*/
 }
 
 a:focus {

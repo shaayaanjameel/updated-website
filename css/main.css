@@ -1,0 +1,263 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    font-size: 110%;
+  }  
+}
+
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 120%
+  }    
+}
+
+@media only screen and (min-width: 120em) {
+  html {
+    font-size: 130%
+  }    
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/*Rajaa:
+	in body put positions:relative
+	min-height:100% 
+	and padding bottom: #em 
+	that number u figure out 
+	in footer its position absolute 
+Shaayaan Jameel:
+	In body? 
+Rajaa:
+	top 0
+	body 0
+	left 0 and right 0
+*/
+
+/* Consistent CSS */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+/*
+  background-image: url(../images/background.jpg);
+  background-repeat: repeat;
+*/
+}
+
+a:focus {
+  outline: 3px solid #000;
+}
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+.logo {
+  text-align: center;
+  margin: .5em 0 0;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.desc {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.desc li {
+  display: inline-block;
+  font-size: .75em;
+  font-weight: 300;
+}
+
+.desc a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+/*  width: 100%;*/
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.footer p {
+  color: black;
+  font-weight: 300;
+  padding: 3em 0;
+  margin: 0;
+}
+
+/* Main Page CSS */
+
+.pbox {
+  padding: .65em;
+}
+
+.img-flex {
+  width: 100%;
+}
+
+.img-wrap {
+  transition-property: transform;
+  
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.img-wrap img {
+  display: block;
+}
+
+.img-hover {
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+.img-hover img {
+  display: block;
+}
+
+.img-hover h2 {
+  display: none;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: white;
+  margin: 0;
+  padding-top: 38%;
+}
+
+.img-hover:hover h2 {
+  display: block;
+}
+
+/* Project Page CSS */
+
+.projectbox {
+  padding: .65em;
+}
+
+.projectinfo {
+  margin: 2em 0;
+}
+
+.projectinfo h2 {
+  margin-bottom: .25em;
+  text-transform: uppercase;
+}
+
+.projectinfo p {
+  margin: 0 auto;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+/* About Page CSS */
+
+.aboutbox {
+/*  margin: 2em 0;*/
+}
+
+.aboutbox p {
+  font-weight: 300;
+  text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+  
+  .img-hover h2 {
+    padding-top: 43%;
+  }
+  
+}
+
+@media only screen and (min-width: 38em) {
+
+  .img-hover h2 {
+    padding-top: 40%;
+  }
+  
+  .aboutbox p {
+    text-align: left;
+  }
+  
+}
+  
+@media only screen and (min-width: 60em) {
+ 
+  .logo {
+    text-align: left;
+    padding-left: 1.85em;
+  }
+  
+  .desc {
+    text-align: left;
+    padding-left: 3.4em;
+  }
+  
+  .pbox,
+  .projectbox,
+  .aboutbox {
+    padding-left: 2.6em;
+    padding-right: 2.6em;
+  }
+  
+  .img-hover h2 {
+    padding-top: 38%;
+  }
+ 
+}
+
+@media only screen and (min-width: 80em) {
+ 
+  .img-hover h2 {
+    padding-top: 43%;
+  }
+ 
+}

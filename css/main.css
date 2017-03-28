@@ -95,14 +95,16 @@ a:focus {
 }
 
 .footer {
-/*  width: 100%;*/
-  position: absolute;
-  top: 100vh;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
   text-align: center;
-  background-color: gainsboro;
+}
+
+.footer div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .footer p {
@@ -176,7 +178,7 @@ a:focus {
 }
 
 .projectinfo h2 {
-  margin-bottom: .25em;
+  margin-bottom: .75em;
   text-transform: uppercase;
 }
 
@@ -188,13 +190,36 @@ a:focus {
 
 /* About Page CSS */
 
-.aboutbox {
-/*  margin: 2em 0;*/
+.intro {
+  text-align: center;
+  font-weight: 400;
 }
 
 .aboutbox p {
   font-weight: 300;
   text-align: center;
+  margin-bottom: .5em;
+}
+
+.aboutbox a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+.education h2 {
+  margin-bottom: .75em;
+}
+
+.education h4 {
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.education p {
+  padding-left: 1em;
+  border-left: 1px solid #000;
+  text-align: left;
 }
 
 @media only screen and (min-width: 25em) {
@@ -209,6 +234,11 @@ a:focus {
 
   .img-hover h2 {
     padding-top: 40%;
+  }
+  
+   .intro {
+    text-align: left;
+    margin-bottom: .75em;
   }
   
   .aboutbox p {
@@ -241,6 +271,11 @@ a:focus {
     padding-top: 38%;
   }
  
+  .footer {
+    margin-left: 2.6em;
+    margin-right: 2.6em;
+  }
+  
 }
 
 @media only screen and (min-width: 80em) {

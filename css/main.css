@@ -225,6 +225,17 @@ a:focus {
   text-align: left;
 }
 
+/* 404 Page CSS */
+
+.error {
+}
+
+.ebox {
+  padding: .65em;
+}
+
+/* Footer */
+
 @media only screen and (min-width: 25em) {
   
   .img-hover h2 {

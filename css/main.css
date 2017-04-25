@@ -181,7 +181,7 @@ a:focus {
 }
 
 .projectinfo h2 {
-  margin-bottom: .75em;
+  margin-bottom: .5em;
   text-transform: uppercase;
 }
 
@@ -192,6 +192,14 @@ a:focus {
 }
 
 /* About Page CSS */
+
+.aboutbox {
+  padding: .65em;
+}
+
+.aboutbox h3 {
+  margin-bottom: .5em;
+}
 
 .intro {
   text-align: center;
@@ -210,7 +218,7 @@ a:focus {
 }
 
 .education h2 {
-  margin-bottom: .75em;
+  margin-bottom: .25em;
 }
 
 .education h4 {
@@ -221,18 +229,25 @@ a:focus {
 
 .education p {
   padding-left: 1em;
-  border-left: 1px solid #000;
+  border-left: 2px solid #000;
   text-align: left;
 }
 
 /* 404 Page CSS */
 
-.error {
-}
-
 .ebox {
   padding: .65em;
 }
+
+.ebox p {
+  font-weight: 300;
+}
+
+.error a{
+  text-decoration: none;
+  color: darkgray;
+}
+
 
 /* Footer */
 
@@ -276,7 +291,8 @@ a:focus {
   
   .pbox,
   .projectbox,
-  .aboutbox {
+  .aboutbox,
+  .ebox {
     padding-left: 2.6em;
     padding-right: 2.6em;
   }

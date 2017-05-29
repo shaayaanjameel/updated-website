@@ -5,6 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,8 +39,10 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4.5em 0;
+  min-height: 100%;
   font-family: sans-serif;
   text-align: center;
 }
@@ -57,7 +60,7 @@ a:focus {
 
 .skip-links a {
   position: absolute;
-  top: -3em;
+  top: -4em;
   background-color: black;
   color: white;
   padding: .5em .75em;
@@ -98,22 +101,15 @@ a:focus {
 }
 
 .footer {
-  position: relative;
-  text-align: center;
-}
-
-.footer div {
   position: absolute;
-  top: 0;
   right: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
+  padding: 1em 0;
+  background-color: darkgray;
 }
 
 .footer p {
-  color: black;
-  font-weight: 300;
-  padding: 3em 0;
   margin: 0;
 }
 
@@ -198,7 +194,7 @@ a:focus {
 }
 
 .aboutbox h3 {
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 
 .intro {
@@ -243,15 +239,16 @@ a:focus {
   font-weight: 300;
 }
 
-.error a{
+.error a {
   text-decoration: none;
   color: darkgray;
 }
 
-
-/* Footer */
-
 @media only screen and (min-width: 25em) {
+  
+  body {
+  padding: 0 0 3.5em 0;
+}
   
   .img-hover h2 {
     padding-top: 43%;
@@ -268,6 +265,14 @@ a:focus {
    .intro {
     text-align: left;
     margin-bottom: .75em;
+  }
+  
+  .pbox,
+  .projectbox,
+  .aboutbox,
+  .ebox {
+    padding-left: 2.6em;
+    padding-right: 2.6em;
   }
   
   .aboutbox p {
@@ -289,23 +294,10 @@ a:focus {
     padding-right: 0;
   }
   
-  .pbox,
-  .projectbox,
-  .aboutbox,
-  .ebox {
-    padding-left: 2.6em;
-    padding-right: 2.6em;
-  }
-  
   .img-hover h2 {
     padding-top: 38%;
   }
  
-  .footer {
-    margin-left: 2.6em;
-    margin-right: 2.6em;
-  }
-  
 }
 
 @media only screen and (min-width: 80em) {

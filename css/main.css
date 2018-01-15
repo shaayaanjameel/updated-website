@@ -80,7 +80,7 @@ a:focus {
 
 .logo a {
   text-decoration: none;
-  color: black;
+  color: #113A5F;
 }
 
 .desc {
@@ -95,9 +95,21 @@ a:focus {
   font-weight: 300;
 }
 
+.desc li:first-child {
+  color: #AAAAAA;
+}
+
 .desc a {
   text-decoration: none;
-  color: black;
+  color: #AAAAAA;
+}
+
+.desc a:hover {
+  font-weight: 400;
+}
+
+p {
+  color: #113A5F;
 }
 
 .footer {
@@ -106,7 +118,7 @@ a:focus {
   bottom: 0;
   left: 0;
   padding: 1em 0;
-  background-color: darkgray;
+  background-color: #FCD2B0;
 }
 
 .footer p {
@@ -231,17 +243,43 @@ a:focus {
 
 /* 404 Page CSS */
 
-.ebox {
-  padding: .65em;
+.error {
+  background-color: #FCD2B0;
 }
 
-.ebox p {
-  font-weight: 300;
+.emain {
+  text-align: left;
+  padding: 5em 3em;
 }
 
-.error a {
+.ebox h1 {
+  font-size: 3em;
+  line-height: 1em;
+  color: #113A5F;
+}
+
+.einfo {
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.bbtn {
+  margin-bottom: 0;
+  padding: .5em;
+  border: solid 3px ;
+  text-align: center;
+  max-width: 250px;
+}
+
+.bbtn a {
   text-decoration: none;
-  color: darkgray;
+  color: #113A5F;
+}
+
+.bbtn:hover {
+}
+
+.bbtn a:hover {
 }
 
 @media only screen and (min-width: 25em) {
@@ -252,6 +290,16 @@ a:focus {
   
   .img-hover h2 {
     padding-top: 43%;
+  }
+  
+/*
+  .ebox h1 {
+    font-size: 4em;
+  }
+*/
+  
+  .einfo {
+    max-width: 300px;
   }
   
 }
@@ -269,14 +317,17 @@ a:focus {
   
   .pbox,
   .projectbox,
-  .aboutbox,
-  .ebox {
+  .aboutbox {
     padding-left: 2.6em;
     padding-right: 2.6em;
   }
   
   .aboutbox p {
     text-align: left;
+  }
+  
+  .ebox h1 {
+    font-size: 5em;
   }
   
 }
@@ -296,6 +347,14 @@ a:focus {
   
   .img-hover h2 {
     padding-top: 38%;
+  }
+  
+  .ebox h1 {
+    font-size: 7em;
+  }
+  
+  .einfo {
+    max-width: 450px;
   }
  
 }
